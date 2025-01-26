@@ -36,5 +36,19 @@
 #
 # Live example:
 
+
+custom/cpp/ah_pagination.cpp
+custom/cpp/custom_cpp/
+custom/lua/homepoint_heal.lua
+custom/lua/conquest_regional_npcs_always_up.lua
+custom/lua/chocobo_raising_qol.lua
+custom/lua/loginannounce.lua
+custom/sql/
 custom/commands/
-custom/lua/test_npcs_in_gm_home.lua
+custom/lua/enabled/
+custom/lua/hangout/
+custom/lua/items/
+custom/lua/npcs/
+custom/lua/trusts/
+
+

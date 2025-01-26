@@ -450,6 +450,48 @@ xi.voidwalker.onMobSpawn = function(mob)
     mob:setUntargetable(true)
     local mods = modByMobName[mobName]
 
+if mob:getMainLvl() > 99 and mob:getMainLvl() <= 104 then
+        mob:addMod(xi.mod.ATT, 500)
+        mob:addMod(xi.mod.DEF, 50)
+        mob:addMod(xi.mod.ACC, 250)
+        mob:addMod(xi.mod.EVA, 75)
+        mob:addMod(xi.mod.MATT, 20)
+        mob:addMod(xi.mod.MDEF, 100)
+        mob:addMod(xi.mod.MACC, 200)
+        mob:addMod(xi.mod.MEVA, 100)
+        mob:addMod(xi.mod.HASTE_MAGIC, 5)
+elseif mob:getMainLvl() > 104 and mob:getMainLvl() <= 114 then
+        mob:addMod(xi.mod.ATT, 750)
+        mob:addMod(xi.mod.DEF, 75)
+        mob:addMod(xi.mod.ACC, 300)
+        mob:addMod(xi.mod.EVA, 100)
+        mob:addMod(xi.mod.MATT, 30)
+        mob:addMod(xi.mod.MDEF, 125)
+        mob:addMod(xi.mod.MACC, 300)
+        mob:addMod(xi.mod.MEVA, 125)
+        mob:addMod(xi.mod.HASTE_MAGIC, 7)
+elseif mob:getMainLvl() > 114 and mob:getMainLvl() <= 119 then
+        mob:addMod(xi.mod.ATT, 900)
+        mob:addMod(xi.mod.DEF, 100)
+        mob:addMod(xi.mod.ACC, 400)
+        mob:addMod(xi.mod.EVA, 125)
+        mob:addMod(xi.mod.MATT, 40)
+        mob:addMod(xi.mod.MDEF, 135)
+        mob:addMod(xi.mod.MACC, 400)
+        mob:addMod(xi.mod.MEVA, 140)
+        mob:addMod(xi.mod.HASTE_MAGIC, 9)
+        mob:addMod(xi.mod.REGEN, 20)
+elseif mob:getMainLvl() > 119 and mob:getMainLvl() <= 121 then
+        mob:addMod(xi.mod.ATT, 1000)
+        mob:addMod(xi.mod.DEF, 150)
+        mob:addMod(xi.mod.ACC, 500)
+        mob:addMod(xi.mod.EVA, 150)
+        mob:addMod(xi.mod.MATT, 50)
+        mob:addMod(xi.mod.MDEF, 150)
+        mob:addMod(xi.mod.MACC, 500)
+        mob:addMod(xi.mod.MEVA, 150)
+        mob:addMod(xi.mod.HASTE_MAGIC, 10)
+end
     if mods then
         mods(mob)
     end
